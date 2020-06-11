@@ -1,0 +1,274 @@
+/*****************************************************
+ * Magic Mirror                                      *
+ * Custom CSS                                        *
+ *                                                   *
+ * By Michael Teeuw http://michaelteeuw.nl           *
+ * MIT Licensed.                                     *
+ *                                                   *
+ * Add any custom CSS below.                         *
+ * Changes to this files will be ignored by GIT. *
+ *****************************************************/
+
+
+/*body {
+    background-color: #cccccc;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}*/
+
+/*
+* https://forum.magicmirror.builders/topic/9707/save-performance-when-rotating-screen-e-g-on-raspberry-pi
+*/
+
+
+body {
+  background-color: #cccccc;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+  width: 100vh;
+  height: 100vw;
+  object-fit: cover;
+  top: -100vw;
+  visibility: visible;
+ }
+
+.region.bottom.bar {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.MMM-EasyPix .photo {
+  margin-right: 0px;        /* Move your picture using these */
+  margin-left: 0px;         /* Move your picture using these */
+  margin-top: 0px;          /* Move your picture using these */
+  margin-bottom: 0px;       /* Move your picture using these */
+  float: center;               /* Left, center or right */
+  height: 100%;
+  width: 100%;
+}
+
+#GPHOTO_INFO {
+	display:none;
+}
+
+#GPHOTO {
+  position:relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#module_9_MMM-WeatherOrNot.module{
+  margin-bottom: 0px;
+}
+
+.NPOS_albumCover {
+  width: 30%;
+}
+
+.CALEXT .monthly {
+    /*
+    display:none;
+    */
+  background-color: rgba(0,0,0,9);
+}
+
+.CALEXT .tableStyle .today {
+  border: 4px solid #FF0000;
+  background:#FFF;
+}
+
+.CALEXT .tableStyle .today .header .title {
+  color: #FF0000;
+}
+
+.CALEXT .tableStyle .thismonth.day_6 .header {
+  background: #CCC;
+}
+
+.CALEXT .tableStyle .thismonth.day_6 .header .title {
+  color: #FFF;
+}
+
+.CALEXT  .tableStyle .day_6 {
+  background:#AAAAAF;
+  color:white;
+}
+
+.CALEXT .tableStyle .thismonth.day_7 .header {
+  background: #CCC;
+}
+
+.CALEXT .tableStyle .thismonth.day_7 .header .title {
+  color: #FFF;
+}
+
+.CALEXT  .tableStyle .day_7 {
+  background:#AAAAAF;
+  color:white;
+}
+
+.CALEXT .tableStyle {
+  max-width: 99%;
+}
+
+.currentweather .wi-day-sunny {
+content: url("/css/icons/day.svg");
+}
+
+.currentweather .wi-day-cloudy {
+content: url("/css/icons/cloudy-day-1.svg");
+}
+
+.currentweather .wi-rain {
+content: url("/css/icons/rainy-6.svg");
+}
+
+.currentweather .wi-night-clear {
+content: url("/css/icons/night.svg");
+}
+
+.currentweather .wi-night-cloudy {
+content: url("/css/icons/cloudy-night-2.svg");
+padding-right: 15px;
+padding-top: 10px;
+}
+
+.currentweather .wi-cloudy {
+content: url("/css/icons/cloudy.svg");
+}
+
+.currentweather .wi-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.currentweather .wi-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.currentweather .wi-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.currentweather .wi-cloudy-windy {
+content: url("/css/icons/cloudy-day-3.svg");
+}
+
+.currentweather .wi-night-rain {
+content: url("/css/icons/rainy-6.svg");
+}
+
+.currentweather .wi-night-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.currentweather .wi-night-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.currentweather .wi-night-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.currentweather .wi-fog {
+content: url("/css/icons/cloudy.svg");
+}
+
+.currentweather .wi-night-alt-cloudy-windy {
+content: url("/css/icons/cloudy-night-1.svg");
+}
+
+/* Aenderungen Wettervorhersage */
+
+.weatherforecast .weathericon {
+  position: absolute;
+  left: 35px;
+  z-index: 1;
+  margin-top: -30px;
+  height: 60px;
+}
+
+.weatherforecast .wi-day-sunny {
+content: url("/css/icons/day.svg");
+padding-left: 6px;
+padding-top: 5px;
+height: 50px;
+}
+
+.weatherforecast .wi-day-cloudy {
+content: url("/css/icons/cloudy-day-1.svg");
+}
+
+.weatherforecast .wi-rain {
+content: url("/css/icons/rainy-6.svg");
+padding-left: 8px;
+padding-top: 5px;
+height: 45px;
+}
+
+.weatherforecast .wi-night-clear {
+content: url("/css/icons/night.svg");
+}
+
+.weatherforecast .wi-night-cloudy {
+content: url("/css/icons/cloudy-night-2.svg");
+height: 50px;
+padding-left: 5px;
+padding-top: 7px;
+}
+
+.weatherforecast .wi-cloudy {
+content: url("/css/icons/cloudy.svg");
+}
+
+.weatherforecast .wi-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.weatherforecast .wi-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.weatherforecast .wi-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.weatherforecast .wi-cloudy-windy {
+content: url("/css/icons/cloudy-day-3.svg");
+height: 45px;
+padding-left: 8px;
+padding-top: 7px;
+}
+
+.weatherforecast .wi-night-rain {
+content: url("/css/icons/rainy-6.svg");
+padding-left: 8px;
+padding-top: 5px;
+height: 45px;
+}
+
+.weatherforecast .wi-night-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.weatherforecast .wi-night-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.weatherforecast .wi-night-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.weatherforecast .wi-fog {
+content: url("/css/icons/cloudy.svg");
+}
+
+.weatherforecast .wi-night-alt-cloudy-windy {
+content: url("/css/icons/cloudy-night-1.svg");
+height: 50px;
+padding-left: 5px;
+padding-top: 7px;
+}

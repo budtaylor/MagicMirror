@@ -1,0 +1,31 @@
+{
+  "name": "Magic-Mirror-Module-Halloween",
+  "version": "0.0.1",
+  "description": "Halloween module for the Magic Mirror.",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "module",
+    "motion"
+  ],
+  "author": "Djtale",
+  "contributors": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "scripts": {
+    "postinstall": "node_modules/.bin/electron-rebuild -e ../../node_modules/electron"
+  },
+  "dependencies": {
+    "onoff": "latest",
+    "electron-rebuild": "^1.2.1",
+    "python-shell": "latest",
+    "tree-kill": "latest"
+  }
+}
